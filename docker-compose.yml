@@ -4,11 +4,11 @@ services:
   database:
     image: postgres:15
     environment:
-      - POSTGRES_DB=smartphones
+      - POSTGRES_DB=ventasmartphon
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=root
     ports:
-      - '8888:5432'
+      - '5432:5432'
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
